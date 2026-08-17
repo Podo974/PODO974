@@ -1,16 +1,32 @@
-## Hi there 👋
+# PodoTriage — prototype PWA
 
-<!--
-**Podo974/PODO974** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Prototype gratuit de pré-consultation pied/genou pour tablette.
 
-Here are some ideas to get you started:
+## Lancer localement
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Option la plus simple :
+1. Ouvrir `index.html` dans un navigateur moderne.
+2. Pour l'installation PWA complète, servir le dossier avec un petit serveur HTTP local :
+   `python -m http.server 8080`
+3. Ouvrir `http://localhost:8080` sur la tablette connectée au même réseau.
+
+## Données
+
+Cette version ne contient aucun serveur et stocke temporairement l'état courant dans `localStorage`.
+Ne pas utiliser ce prototype tel quel pour des données de santé réelles en production.
+
+## Contenu clinique actuel
+
+Parcours initiaux :
+- douleur plantaire du talon / fasciopathie plantaire
+- hallux limitus / rigidus
+- névralgie interdigital / Morton à explorer
+- tendinopathie d'Achille
+- pied plat symptomatique / dysfonction médiale à explorer
+- douleur fémoro-patellaire
+- atteinte méniscale à explorer
+- syndrome de bandelette ilio-tibiale
+- tendinopathie patellaire
+- red flags de base
+
+Les scores sont des règles d'orientation, pas des probabilités diagnostiques.
